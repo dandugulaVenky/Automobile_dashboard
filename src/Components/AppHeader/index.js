@@ -25,17 +25,7 @@ function AppHeader (){
     <Typography.Title>Dashboard</Typography.Title>   
 
 
-     <Space>
-        {/* <Badge count={comments} dot>
-        <MailOutlined style={{fontSize:24}} />
-        </Badge> */}
-     
-     {/* <Badge count={orders}> <BellFilled style={{fontSize:24}}  
-     onChange={()=>{
-        setComments(true)
-     }}
-     /></Badge> */}
-     </Space>
+   
 
     <Drawer title="comments" open={commentsOpen} onClose={() =>{
         setCommentsOpen(false)
