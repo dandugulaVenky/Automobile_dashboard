@@ -1,5 +1,5 @@
-import {Badge, Space, Typography, Drawer } from "antd";
-import {BellFilled, MailOutlined} from "@ant-design/icons"
+import { Typography, Drawer } from "antd";
+
 import { useEffect, useState } from "react";
 import { getComments, getOrders } from "../../API";
 
@@ -8,7 +8,7 @@ function AppHeader (){
     const [comments, setComments] = useState(0);
     const [orders, setOrders] =  useState(0);
     const [commentsOpen, setCommentsOpen] = useState(false);
-    const [notificationOpen, setNotificationOpen] = useState(false)
+  
 
     useEffect(() =>{
         getComments().then((res) =>{
